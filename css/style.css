@@ -681,6 +681,7 @@ color: #404040;
 
 .people_imgs {
 margin-right: 12px;
+background-repeat: no-repeat;
 }
 .people_text   {
     font-family:'PT Sans';
