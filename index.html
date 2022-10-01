@@ -329,7 +329,7 @@
                                         <div class="red_block">
                                             <img src="css/img/red.png" alt="" class="red_img">
                                             <div class="red_text">
-                                                <a href="#" class="red_link"> <p class="red_link">Get great <br>  loan! </p> </a>
+                                                <a href="#" class="red_link"> <p class="red_link">Get great <br>  loan!  &#8594 </p> </a>
                                             </div>
                                            
                                         </div>
@@ -365,6 +365,19 @@
     
 
 
+<script>
+    let slide = document.querySelector('.prices_slide_btn');
 
+    function slideBtn() {
+        slide.addEventListener('click', () => {
+            document.querySelector('.prices_slide_btn').classList.toggle('next');
+            document.querySelector('.prices_slide').classList.toggle('back');
+
+        });
+        
+        
+    }
+    slideBtn();
+</script>
 </body>
 </html>

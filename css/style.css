@@ -92,9 +92,9 @@ margin: 0 auto;
     text-align: center; 
 }
 .bottom_img {
-    width: 71.11px;
-    height: 46.46px;
-    margin: 0 auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .aside_bottom   {
 display: flex;
@@ -383,13 +383,18 @@ font-weight: 400;
 font-size: 0.8rem;
 color: #AEAEAE;
 }
+
 .prices_slide   {
     margin-top: 1.8rem;
     margin-left: 3rem;
     width: 45.69px;
 height: 23.45px;
 background: #acacac;
+position: relative;
 border-radius: 13.617px;
+}
+.back   {
+    background: #197BBD;
 }
 .prices_slide_btn   {
     width: 23.45px;
@@ -399,7 +404,16 @@ border-radius: 13.617px;
 border: none;
 display: flex;
 outline: none;
+transition: 2s  linear;
 }
+
+.next {
+position: absolute;
+right: 0;
+transition: 4s linear;
+
+}
+
 
 .item2  {
     margin-top: 2.5rem;
@@ -711,8 +725,16 @@ margin-left: 10px;
 .input_block    {
     display: flex;
     margin-top: 1rem;
+    position: relative;
+    align-items: center;
 }
-
+.input_block::after {
+    position: absolute;
+    right: 57%;
+    content: "$";
+    color: #C7C7C7;
+font-family: 'Lato';
+}
 .input_numbers  {
     margin-right: 10px;
     border: 1px solid #197BBD;
@@ -743,6 +765,13 @@ border-radius: 13.617px;
 align-items: center;
 display: inline-block;
 align-items: center;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.trans_btn:hover    {
+    transition: 0.3s;
+    background-color: #197BBD;
 }
 
 .red_block  {
